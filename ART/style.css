@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    font-family: 'Varela Round', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+#loading{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    background-color: #181818;
+    z-index: 99;
+    text-align: center;
+}
+#loading-image{
+    margin-top: 250px;
+}
+.resim{
+    width: 950px;
+}
+.yazi2{
+    font-size: 25px;
+}
+.yazi{
+    font-size: 18px;
+}
+.artlogo{
+    width: 250px;
+}
+.ust{
+    width: 350px;
+}
+.alt{
+    width: 650px;
+}
+p{
+    font-size: 25px;
+    color: #CA8A0C;
+}
+h1{
+    font-size: 25px;
+    color: #CA8A0C;
+}
+h2{
+    font-size: 25px;
+    color: #CA8A0C;
+}
+a{
+    font-size: 15px;
+    text-decoration: none;
+}
+b{
+    color: #CA8A0C;
+    font-size: 25px;
+}
+body{
+    background-color: #141213;
+}
+nav{
+    background: #181818;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: #CA8A0C;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #CA8A0C;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #503A0F;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #CA8A0C;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 900px){
+    label.logo{
+        font-size: 27px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 800px){
+    label.logo{
+        font-size: 23px;
+        padding-left: 50px;
+    }
+    .resim{
+        width: 400px;
+    }
+    .alt{
+        width: 400px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .yazi{
+        font-size: 15px;
+    }
+    a{
+        font-size: 12px;
+    }
+    .hakkindayazi{
+        font-size: 18px;
+        margin: 50px;
+    }
+    .artlogo{
+        width: 200px;
+    }
+    .ust{
+        width: 250px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #181818;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #503A0F;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width: 450px){
+    label.logo{
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .resim{
+        width: 300px;
+    }
+    .artlogo{
+        width: 150px;
+    }
+}
